@@ -27,6 +27,6 @@ jobs:
           flyctl launch --name $APP_NAME --org personal --no-deploy || true
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-      - run: flyctl deploy --org personal --yes
+      - run: flyctl deploy --yes
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
